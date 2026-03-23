@@ -1,0 +1,16 @@
+{
+  "name": "pptjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/index.js",
+  "scripts": {
+    "generate": "node scripts/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}
