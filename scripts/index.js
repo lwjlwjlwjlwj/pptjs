@@ -35,6 +35,12 @@ export { PAGE_TYPES };
 export async function main() {
   const slides = [
     {
+      type: "SELL_POINT",
+      data: {
+        sellPoint: "销售点",
+      }
+    },
+    {
       type: "FINAL_DESC",
       data: {
         finalDesc: "最终描述",
