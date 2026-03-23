@@ -1,12 +1,13 @@
 import { LAYOUT_WIDTH, LAYOUT_HEIGHT, COLORS } from "../config.js";
+import { IPage } from "./IPage.js";
 
-export class HomeImagePage {
+export class HomeImagePage extends IPage {
     /**
      * @param {Object} slide - PptxGenJS 的 slide 对象
      * @param {Object} data - LLM 生成的结构化数据
      */
-    constructor(slide, data = {}) {
-        this.slide = slide;
+    constructor(slide, data = {}, options = {}) {
+        super(slide, data, options);
         // 简化后的数据模型
         this.data = {
             sideTitle: data.sideTitle || "", // 第一列文本

@@ -1,15 +1,16 @@
 import { LAYOUT_WIDTH, LAYOUT_HEIGHT, COLORS } from "../config.js";
 import { addSafeImage } from "../utils/imageUtils.js";
 import { calculateTextLayoutHeight } from "../utils/textUtils.js";
+import { IPage } from "./IPage.js";
 
-export class TopTextBottomImagePage {
+export class TopTextBottomImagePage extends IPage {
   /**
    * @param {Object} slide - PptxGenJS 的 slide 对象
    * @param {Object} data - 内容数据
    * @param {Object} options - 样式配置（可选）
    */
   constructor(slide, data = {}, options = {}) {
-    this.slide = slide;
+    super(slide, data, options);
     this.data = {
       text: data.text || "",
       imagePath: data.imagePath || ""
