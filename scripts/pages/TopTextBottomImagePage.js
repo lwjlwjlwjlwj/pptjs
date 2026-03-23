@@ -31,7 +31,7 @@ export class TopTextBottomImagePage {
     const { text, imagePath } = this.data;
     const { fontSize, bold, color, highlight, valign, rotate, align, textY, ...restOptions } = this.options;
 
-    const textW = LAYOUT_WIDTH - 1;
+    const textW = LAYOUT_WIDTH;
 
     // 动态计算文本高度
     const textH = calculateTextLayoutHeight(text, fontSize, textW);
