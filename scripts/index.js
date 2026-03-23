@@ -35,6 +35,12 @@ export { PAGE_TYPES };
 export async function main() {
   const slides = [
     {
+      type: "FINAL_DESC",
+      data: {
+        finalDesc: "最终描述",
+      }
+    },
+    {
       type: "TOP_TEXT_BOTTOM_IMAGE",
       data: {
         text: "柳丝木",
