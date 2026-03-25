@@ -2,12 +2,14 @@ import { LeftTextRightImagePage } from "./LeftTextRightImagePage.js";
 import { TopTextBottomImagePage } from "./TopTextBottomImagePage.js";
 import { HomeImagePage } from "./HomeImagePage.js";
 import { FinalDescPage } from "./FinalDescPage.js";
+import { SellPointPage } from "./SellPointPage.js";
 
 const PAGE_TYPES = {
   HOME_IMAGE: HomeImagePage,
   LEFT_TEXT_RIGHT_IMAGE: LeftTextRightImagePage,
   TOP_TEXT_BOTTOM_IMAGE: TopTextBottomImagePage,
-  FINAL_DESC: FinalDescPage
+  FINAL_DESC: FinalDescPage,
+  SELL_POINT: SellPointPage,
 };
 
 export function registerPageType(type, PageClass) {
