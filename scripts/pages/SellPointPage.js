@@ -4,6 +4,6 @@ export class SellPointPage extends IPage {
     }
 
     render() {
-        
+        console.log("test");
     }
 }
