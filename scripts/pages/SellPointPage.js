@@ -1,5 +1,5 @@
 import { IPage } from "./IPage.js";
-import { COLORS } from "../config.js";
+import { COLORS, LAYOUT_WIDTH, LAYOUT_HEIGHT } from "../config.js";
 
 export class SellPointPage extends IPage {
     constructor(slide, data = {}, options = {}) {
@@ -32,9 +32,8 @@ export class SellPointPage extends IPage {
             h: LAYOUT_HEIGHT,
             align: "left",
             valign: "middle",
-            fontSize: bestFontSize,
+            fontSize: 24,
             bold: true,
-            lineSpacing: bestFontSize * 1.5,
             fontFace: "微软雅黑",
         })
     }

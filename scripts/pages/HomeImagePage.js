@@ -10,7 +10,7 @@ export class HomeImagePage extends IPage {
         super(slide, data, options);
         // 简化后的数据模型
         this.data = {
-            sideTitle: data.sideTitle || "", // 第一列文本
+            sideTitle: data.sideTitle || "产品图片", // 第一列文本
             productHeader: {
                 brand: data.brand || "",
                 name: data.name || ""

@@ -63,7 +63,6 @@ export async function main() {
     {
       type: "HOME_IMAGE",
       data: {
-        sideTitle: "侧标题",
         brand: "品牌名",
         name: "产品名",
         mainSpecDesc: "主品规格描述",
